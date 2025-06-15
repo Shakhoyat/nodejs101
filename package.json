@@ -1,0 +1,20 @@
+{
+  "name": "nodejs101",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Shakhoyat/nodejs101#readme",
+  "bugs": {
+    "url": "https://github.com/Shakhoyat/nodejs101/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shakhoyat/nodejs101.git"
+  },
+  "license": "ISC",
+  "author": "shakhoyat",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
