@@ -1,5 +1,6 @@
 // console.log("We are learning about nodejs modules!");
-const { sum, sub, mul, div } = require("./utils");
+// const { sum, sub, mul, div } = require("./utils");
+import { sum, sub, mul, div } from "./utils.js";
 const firstname = "John";
 console.log("Adding 2 and 3: ", sum(2, 3));
 console.log("Subtracting 5 from 10: ", sub(10, 5));
