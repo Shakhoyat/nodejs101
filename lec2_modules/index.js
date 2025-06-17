@@ -3,8 +3,9 @@ const sum = (a, b) => a + b;
 const sub = (a, b) => a - b;
 const mul = (a, b) => a * b;
 const div = (a, b) => a / b;
-
+const firstname = "John";
 console.log("Adding 2 and 3: ", sum(2, 3));
 console.log("Subtracting 5 from 10: ", sub(10, 5));
 console.log("Multiplying 4 and 5: ", mul(4, 5));
 console.log("Dividing 20 by 4: ", div(20, 4));
+console.log(firstname);
