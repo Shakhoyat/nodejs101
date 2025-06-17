@@ -1,5 +1,7 @@
 import http from "http";
-const server = http.createServer();
+const server = http.createServer((req, res) => {
+  res.end("you request was received");
+});
 
 const port = 3000;
 
