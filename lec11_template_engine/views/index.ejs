@@ -18,6 +18,14 @@
         We're Learning Ejs with <%= name %>!
             <br>
     </h1>
+    <ul>
+        <% for (let i=0; i < iphones.length; i++) { %>
+            <li>Smartphone Name =
+                <%= iphones[i].title %> -Price = $<%= iphones[i].price %>
+                        <img src="<%= iphones[i].image %>" alt="<%= iphones[i].title %>" />
+            </li>
+            <% } %>
+    </ul>
 </body>
 
 </html>
