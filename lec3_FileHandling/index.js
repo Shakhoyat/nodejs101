@@ -41,10 +41,10 @@ const appendFileAsync = async (filename, content) => {
 
 const createDirectoryAsync = async (dirname) => {
   try {
-    await mkdir(dirname);
+    await mkdir(dirname, { recursive: true });
     console.log(`Directory '${dirname}' created successfully`);
   } catch (error) {
     console.error("Error creating directory:", error);
   }
 };
-createDirectoryAsync("public");
+createDirectoryAsync("src/py");
