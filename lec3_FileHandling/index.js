@@ -1,4 +1,4 @@
-import { readFile, writeFile, appendFile } from "fs/promises";
+import { readFile, writeFile, appendFile, mkdir } from "fs/promises";
 
 //Read a file
 const readFileAsync = async (filename) => {
@@ -34,5 +34,17 @@ const appendFileAsync = async (filename, content) => {
   }
 };
 
-appendFileAsync("sample.txt", "\nThis is appended content!");
-readFileAsync("sample.txt");
+// appendFileAsync("sample.txt", "\nThis is appended content!");
+// readFileAsync("sample.txt");
+
+//Create a directory-folder
+
+const createDirectoryAsync = async (dirname) => {
+  try {
+    await mkdir(dirname);
+    console.log(`Directory '${dirname}' created successfully`);
+  } catch (error) {
+    console.error("Error creating directory:", error);
+  }
+};
+createDirectoryAsync("public");
