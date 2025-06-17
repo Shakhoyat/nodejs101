@@ -2,7 +2,8 @@ import express from "express";
 
 const app = express();
 app.get("/", (req, res) => {
-  res.render("index.ejs");
+  let name = "John Doe";
+  res.render("index.ejs", { name });
 });
 
 const PORT = 3000;
