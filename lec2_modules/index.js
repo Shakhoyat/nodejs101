@@ -1,8 +1,5 @@
 // console.log("We are learning about nodejs modules!");
-const sum = (a, b) => a + b;
-const sub = (a, b) => a - b;
-const mul = (a, b) => a * b;
-const div = (a, b) => a / b;
+const { sum, sub, mul, div } = require("./utils");
 const firstname = "John";
 console.log("Adding 2 and 3: ", sum(2, 3));
 console.log("Subtracting 5 from 10: ", sub(10, 5));
