@@ -1,4 +1,4 @@
-import { User } from "..Models/User.js";
+import { User } from "../Models/User.js";
 export const userRegister = async (req, res) => {
   try {
     let user = await User.create(req.body);
