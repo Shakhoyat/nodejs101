@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
-import { User } from "./Models/User.js";
+import { userRegister } from "./controllers/user.js";
+
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
@@ -22,22 +23,8 @@ app.get("/", (req, res) => {
 });
 
 //saving data to database
-app.post("/submit", async (req, res) => {
-  try {
-    let user = await User.create(req.body);
-    res.json({
-      message: "User Created successfully",
-      Newuser: user,
-      success: true,
-    });
-  } catch (error) {
-    res.json({
-      message: error.message,
-      success: false,
-    });
-  }
-  //   console.log("Submitted data:", req.body);
-});
+app.post("/submit", userRegister);
+//   console.log("Submitted data:", req.body);
 
 const PORT = 3000;
 
